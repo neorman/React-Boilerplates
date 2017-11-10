@@ -1,0 +1,33 @@
+{
+  "name": "yocale2.1",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.17.0",
+    "material-design-icons": "^3.0.1",
+    "material-ui": "^0.19.4",
+    "node-sass-chokidar": "^0.0.3",
+    "normalize.css": "^7.0.0",
+    "npm-run-all": "^4.0.2",
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "react-router-redux": "next",
+    "react-scripts": "1.0.17",
+    "react-tap-event-plugin": "^3.0.2",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0"
+  },
+  "scripts": {
+    "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build": "npm run build-css && react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "jest-all": "jest",
+    "eject": "react-scripts eject"
+  }
+}

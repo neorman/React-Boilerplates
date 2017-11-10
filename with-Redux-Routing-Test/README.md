@@ -1,4 +1,4 @@
-# This Is Yocale 2.2
+# This Is a Boilderplate for React
 ### To Run:
 ### 1) yarn install
 ### 2) yarn start
